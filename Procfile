@@ -1,0 +1,1 @@
+web: gunicorn blazingstore.wsgi --log-file -

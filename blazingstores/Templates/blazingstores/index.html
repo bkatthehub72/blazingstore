@@ -1,0 +1,186 @@
+{% extends "blazingstores/base.html" %}
+{% load static %}
+
+{% block page_header %}
+    <div class="jumbotron" style="height: 25%; background-color: rgb(101, 223, 97);">
+        <h1 class="display-3">Welcome to Blazing Store</h1>
+        <div class="blazing-marquee" >
+            <marquee>
+                <img src="{% static "blazingstores/images/ADDRESS-1.jpg" %}" alt="Image missing">
+                <img src="{% static "blazingstores/images/ALPHA-1.jpg" %}" alt="Image missing">
+                <img src="{% static "blazingstores/images/BRAVIA-2.jpg" %}" alt="Image missing">
+                <img src="{% static "blazingstores/images/CASUAL-1.jpg" %}" alt="Image missing">
+                <img src="{% static "blazingstores/images/CLIPSAL-1.jpg" %}" alt="Image missing">
+                <img src="{% static "blazingstores/images/DEMO-1.jpg" %}" alt="Image missing">
+                <img src="{% static "blazingstores/images/MASAKO-1.jpg" %}" alt="Image missing">
+                <img src="{% static "blazingstores/images/OXY-1.jpg" %}" alt="Image missing">
+                <img src="{% static "blazingstores/images/VANTAG-1.jpg" %}" alt="Image missing">
+            </marquee>
+        </div>
+        <a class="btn btn-lg btn-primary" href="{% url 'users:register' %}" role="button">Register &raquo;</a>
+    </div>
+{% endblock page_header %}
+{% block content %}
+<div class="row">
+    <div class="col-sm-4">
+      <h2>ADDRESS GIFT SET</h2>
+      <img src="{% static "blazingstores/images/ADDRESS-1.jpg" %}" alt="Image missing">
+    </div>
+    <div class="col-sm-8">
+      <h2>DESCRIPTION</h2>
+      <p>This gift set contain a 150ML shower gel, a 150ML body lotion and a 100ML"Eau de Toilette" sealed in an original box.</p>
+
+      <h3>$19.99</h3>
+      <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+        <input type="hidden" name="cmd" value="_s-xclick">
+        <input type="hidden" name="hosted_button_id" value="C3XCT4ZRHW2NW">
+        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+        <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+      </form>       
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-4">
+      <h2>ALPHA GIFT SET</h2>
+      <img src="{% static "blazingstores/images/ALPHA-1.jpg" %}" alt="Image missing">
+    </div>
+    <div class="col-sm-8">
+      <h2>ALPHA BLUE</h2>
+      <p>This gift set contain a 100ML"Eau de Toilette",a 200ML Body Lotion and a 200ML Shower Gel all sealed in an original box.</p>
+
+      <h3>$19.99</h3>
+      <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+        <input type="hidden" name="cmd" value="_s-xclick">
+        <input type="hidden" name="hosted_button_id" value="U46K9KBN2A8PQ">
+        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+        <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+        </form>             
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-4">
+      <h2>BRAVIA POUR HOMME</h2>
+      <img src="{% static "blazingstores/images/BRAVIA-1.jpg" %}" alt="Image missing">
+    </div>
+    <div class="col-sm-8">
+      <h2>GREAT PRICE</h2>
+      <p>This gift set contain a 100ML"Eau de Toilette",a 150ML After Shave Balm Baume and a 150ML Shower Gel Moussant Corps all in an original box.</p>
+
+      <h3>$24.99</h3>
+      <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+        <input type="hidden" name="cmd" value="_s-xclick">
+        <input type="hidden" name="hosted_button_id" value="XLG7UB2F6JZVW">
+        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+        <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+        </form>                 
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-4">
+      <h2>CASUAL GIFT SET</h2>
+      <img src="{% static "blazingstores/images/CASUAL-1.jpg" %}" alt="Image missing">
+    </div>
+    <div class="col-sm-8">
+      <h2>GREAT PRICE</h2>
+      <p>This gift set contain a 100ML"Eau de Toilette",a 150ML After Shave Balm Baume and a 150ML Shower Gel Moussant Corps all in an original box.</p>
+
+      <h3>$19.99</h3>
+      <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+        <input type="hidden" name="cmd" value="_s-xclick">
+        <input type="hidden" name="hosted_button_id" value="W2GRNVKKHW59G">
+        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+        <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+        </form>             
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-4">
+      <h2>CLIPSAL POUR FEMME</h2>
+      <img src="{% static "blazingstores/images/CLIPSAL-1.jpg" %}" alt="Image missing">
+    </div>
+    <div class="col-sm-8">
+      <h2>GIFT SET FOR LADIES</h2>
+      <p>Contain a 100ML 3.4FL.OZ "Eau de Toilette",a 200ML 6.8FL.OZ Body Lotion and a 200ML 6.8FL.OZ Shower Gel Moussant Corps all in an original box.</p>
+
+      <h3>$49.99</h3>
+      <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+        <input type="hidden" name="cmd" value="_s-xclick">
+        <input type="hidden" name="hosted_button_id" value="S7WLDWTH9XFVJ">
+        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+        <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+        </form>                     
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-4">
+      <h2>DEMO BLACK</h2>
+      <img src="{% static "blazingstores/images/DEMO-1.jpg" %}" alt="Image missing">
+    </div>
+    <div class="col-sm-8">
+      <h2>PARFUM BLAZE MADE IN FRANCE</h2>
+      <p>Contain a 100ML 3.4FL.OZ "Eau de Toilette",a 150ML 5.1FL.OZ After Shave Balm and a 150ML 5.1FL.OZ Shower Gel all in an original box.</p>
+
+      <h3>$21.99</h3>
+      <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+        <input type="hidden" name="cmd" value="_s-xclick">
+        <input type="hidden" name="hosted_button_id" value="Y84EJQGB8G4ZL">
+        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+        <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+        </form>                             
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-4">
+      <h2>MASAKO</h2>
+      <img src="{% static "blazingstores/images/MASAKO-1.jpg" %}" alt="Image missing">
+    </div>
+    <div class="col-sm-8">
+      <h2>VAPORISATEUR NATURAL SPRAY</h2>
+      <p>Eau de toilette  3.0FL.OZ./e 90ml in an original box.</p>
+
+      <h3>$14.99</h3>
+      <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+        <input type="hidden" name="cmd" value="_s-xclick">
+        <input type="hidden" name="hosted_button_id" value="LHTSL7BM8CTXS">
+        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+        <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+        </form>                                  
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-4">
+      <h2>OXY WOMEN</h2>
+      <img src="{% static "blazingstores/images/OXY-1.jpg" %}" alt="Image missing">
+    </div>
+    <div class="col-sm-8">
+      <h2>GIFT SET  SPECIAL HOLIDAY</h2>
+      <p>Contain a 100ML 3.4FL.OZ "Eau de toilette", a 200ML 6.8FL.OZ Body Lotion and a 200ML 6.8FL.OZ Shower Gel in an original box.</p>
+
+      <h3>$19.99</h3>
+      <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+        <input type="hidden" name="cmd" value="_s-xclick">
+        <input type="hidden" name="hosted_button_id" value="NWJCB2KHR6VVN">
+        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+        <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+        </form>                                         
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-4">
+      <h2>VANTAG</h2>
+      <img src="{% static "blazingstores/images/VANTAG-1.jpg" %}" alt="Image missing">
+    </div>
+    <div class="col-sm-8">
+      <h2>FOR MEN-POUR HOMME</h2>
+      <p>Contain a 100ML 3.4FL.OZ "Eau de toilette", a 150ML 5.0FL.OZ After Shave Balm and a 150ML 5.0FL.OZ Shower Gel in an original box.</p>
+
+      <h3>$19.99</h3>
+      <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+        <input type="hidden" name="cmd" value="_s-xclick">
+        <input type="hidden" name="hosted_button_id" value="49Z4FYJJ5WS7G">
+        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+        <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+        </form>                                                
+    </div>
+</div>
+{% endblock content %}
