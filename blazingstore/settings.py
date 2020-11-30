@@ -23,7 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'qq95=_5llb*kj+1wrs-xjo10nttlhx^i_71i1r!3zzx-u80ntx'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = []
 
@@ -63,7 +63,7 @@ ROOT_URLCONF = 'blazingstore.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ['C:\Users\MAMADOU BILLO KANTE\Desktop\BLAZING-STORE3\blazingstores\Templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
