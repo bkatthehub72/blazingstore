@@ -63,7 +63,7 @@ ROOT_URLCONF = 'blazingstore.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['C:\Users\MAMADOU BILLO KANTE\Desktop\BLAZING-STORE3\blazingstores\Templates'],
+        'DIRS': [r'C:\Users\MAMADOU BILLO KANTE\Desktop\BLAZING-STORE3\blazingstores\Templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
